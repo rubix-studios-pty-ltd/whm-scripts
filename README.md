@@ -1,4 +1,4 @@
-# WHM Scripts
+# WHM and cPanel Extensions and Scripts
 
 A collection of scripts for customising, extending, and automating existing cPanel & WHM installations.
 
