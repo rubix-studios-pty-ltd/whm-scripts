@@ -11,9 +11,8 @@ Collection of WHM iContact provider, allowing WHM to send server contact notific
 **[Ntfy](https://ntfy.sh)**
 
 ```
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/rubix-notify/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/rubix-notify/main/contact-provider/ntfy/install.sh | bash
 ```
-
 
 ## License
 
