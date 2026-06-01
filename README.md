@@ -1,6 +1,6 @@
 # WHM Scripts
 
-Collection of WHM Scripts to enable quick customisation and extension to existing WHM installations.
+A collection of scripts for customising, extending, and automating existing cPanel & WHM installations.
 
 ## Script
 
