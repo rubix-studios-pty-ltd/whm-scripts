@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
 BASE="/var/cpanel/perl/Cpanel/iContact/Provider"
 SCHEMA="$BASE/Schema"
