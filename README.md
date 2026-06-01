@@ -4,13 +4,13 @@ Collection of WHM Scripts to enable quick customisation and extension to existin
 
 ## Script
 
-[ntfy](https://ntfy.sh): Contact Provider
-
-This script installs the ntfy provider files into the WHM iContact provider directory.
+**[ntfy](https://ntfy.sh) Contact Provider**
 
 ```
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/rubix-notify/main/install.sh | bash
 ```
+
+This script installs the ntfy provider files into the WHM iContact provider directory.
 
 ## License
 
