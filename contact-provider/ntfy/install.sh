@@ -3,7 +3,7 @@ set -e
 
 BASE="/var/cpanel/perl/Cpanel/iContact/Provider"
 SCHEMA="$BASE/Schema"
-RUBIX_URL="https://raw.githubusercontent.com/rubix-studios-pty-ltd/rubix-notify/main/contact-provider/ntfy"
+RUBIX_URL="https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/contact-provider/ntfy"
 
 echo "Installing ntfy iContact provider..."
 

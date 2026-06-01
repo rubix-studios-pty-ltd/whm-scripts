@@ -1,7 +1,7 @@
 # Copyright (c) 2026 Rubix Studios
 # SPDX-License-Identifier: MIT 
 # 
-# ntfy iContact provider schema for WHM/cPanel.
+# ntfy iContact provider for WHM/cPanel.
 
 package Cpanel::iContact::Provider::Schema::Ntfy;
 
