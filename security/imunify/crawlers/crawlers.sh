@@ -73,8 +73,15 @@ fetch_json_prefixes "duckduckbot" "https://duckduckgo.com/duckduckbot.json"
 
 fetch_json_prefixes "openai-searchbot" "https://openai.com/searchbot.json"
 fetch_json_prefixes "openai-chatgpt-user" "https://openai.com/chatgpt-user.json"
+fetch_json_prefixes "openai-gptbot" "https://openai.com/gptbot.json"
 
 fetch_json_prefixes "perplexitybot" "https://www.perplexity.ai/perplexitybot.json"
+
+fetch_json_prefixes "ahrefsbot" "https://api.ahrefs.com/v3/public/crawler-ip-ranges"
+
+fetch_static_prefixes "semrushbot" \
+  "85.208.98.0/24" \
+  "85.208.98.128/25"
 
 imunify360-agent reload-lists
 
