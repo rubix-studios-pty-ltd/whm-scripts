@@ -2,6 +2,8 @@
 set -euo pipefail
 
 RAW_BASE="https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/payment"
+SCRIPT_URL="$RAW_BASE/payment.sh"
+
 INSTALL_PATH="/usr/local/sbin/rubix-imunify-payment"
 CRON_PATH="/etc/cron.d/rubix-imunify-payment"
 LOG_PATH="/var/log/rubix-imunify-payment.log"
@@ -34,7 +36,7 @@ if ! command -v imunify360-agent >/dev/null 2>&1; then
   exit 1
 fi
 
-curl -fsSL "$RAW_BASE/payment.sh" -o "$INSTALL_PATH"
+curl -fsSL "$SCRIPT_URL" -o "$INSTALL_PATH"
 
 chmod 700 "$INSTALL_PATH"
 chown root:root "$INSTALL_PATH"
