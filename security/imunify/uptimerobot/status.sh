@@ -3,7 +3,7 @@ set -euo pipefail
 
 BASE_DIR="/etc/imunify360/whitelist"
 TMP_DIR="$(mktemp -d)"
-COMMENT_PREFIX="# managed-by=rubix-imunify-instatus"
+COMMENT_PREFIX="# managed-by=rubix-imunify-uptimerobot"
 DATE="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 FAILURES=0
 
@@ -51,7 +51,7 @@ run_source() {
   fi
 }
 
-fetch_instatus_ips() {
+fetch_uptimerobot_prefixes() {
   local name="$1"
   local url="$2"
 
@@ -66,7 +66,8 @@ fetch_instatus_ips() {
     echo "$COMMENT_PREFIX monitoring=$name updated=$DATE source=$url"
 
     jq -r '
-      .ips[]?
+      .prefixes[]?
+      | .ip_prefix // .ipv6_prefix // empty
       | select(type == "string")
       | gsub("^\\s+|\\s+$"; "")
       | select(length > 0)
@@ -83,15 +84,15 @@ require_command sort
 require_command install
 require_command imunify360-agent
 
-run_source "instatus" fetch_instatus_ips \
-  "instatus" \
-  "https://instatus.com/ips"
+run_source "uptimerobot" fetch_uptimerobot_prefixes \
+  "uptimerobot" \
+  "https://api.uptimerobot.com/meta/ips"
 
 imunify360-agent reload-lists
 
 if [ "$FAILURES" -gt 0 ]; then
-  echo "Instatus whitelist sync complete with $FAILURES failed source(s)."
+  echo "UptimeRobot whitelist sync complete with $FAILURES failed source(s)."
   exit 1
 fi
 
-echo "Instatus whitelist sync complete."
+echo "UptimeRobot whitelist sync complete."

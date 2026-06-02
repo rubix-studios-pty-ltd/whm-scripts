@@ -3,7 +3,7 @@ set -euo pipefail
 
 BASE_DIR="/etc/imunify360/whitelist"
 TMP_DIR="$(mktemp -d)"
-COMMENT_PREFIX="# managed-by=rubix-imunify-instatus"
+COMMENT_PREFIX="# managed-by=rubix-imunify-jetpack"
 DATE="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 FAILURES=0
 
@@ -51,7 +51,7 @@ run_source() {
   fi
 }
 
-fetch_instatus_ips() {
+fetch_json_list() {
   local name="$1"
   local url="$2"
 
@@ -63,10 +63,10 @@ fetch_instatus_ips() {
   curl -fsSL --connect-timeout 15 --max-time 60 "$url" -o "$tmp_json"
 
   {
-    echo "$COMMENT_PREFIX monitoring=$name updated=$DATE source=$url"
+    echo "$COMMENT_PREFIX service=$name updated=$DATE source=$url"
 
     jq -r '
-      .ips[]?
+      .[]?
       | select(type == "string")
       | gsub("^\\s+|\\s+$"; "")
       | select(length > 0)
@@ -83,15 +83,15 @@ require_command sort
 require_command install
 require_command imunify360-agent
 
-run_source "instatus" fetch_instatus_ips \
-  "instatus" \
-  "https://instatus.com/ips"
+run_source "jetpack" fetch_json_list \
+  "jetpack" \
+  "https://jetpack.com/ips-v4.json"
 
 imunify360-agent reload-lists
 
 if [ "$FAILURES" -gt 0 ]; then
-  echo "Instatus whitelist sync complete with $FAILURES failed source(s)."
+  echo "Jetpack whitelist sync complete with $FAILURES failed source(s)."
   exit 1
 fi
 
-echo "Instatus whitelist sync complete."
+echo "Jetpack whitelist sync complete."
