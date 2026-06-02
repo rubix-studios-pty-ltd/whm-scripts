@@ -73,7 +73,6 @@ fetch_json_prefixes "duckduckbot" "https://duckduckgo.com/duckduckbot.json"
 
 fetch_json_prefixes "openai-searchbot" "https://openai.com/searchbot.json"
 fetch_json_prefixes "openai-chatgpt-user" "https://openai.com/chatgpt-user.json"
-fetch_json_prefixes "openai-gptbot" "https://openai.com/gptbot.json"
 
 fetch_json_prefixes "perplexitybot" "https://www.perplexity.ai/perplexitybot.json"
 
