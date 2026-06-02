@@ -64,9 +64,9 @@ require_command imunify360-agent
 
 fetch_json_prefixes "applebot" "https://search.developer.apple.com/applebot.json"
 
-fetch_json_prefixes "googlebot" "https://developers.google.com/static/search/apis/ipranges/googlebot.json"
-fetch_json_prefixes "google-special-crawlers" "https://developers.google.com/static/search/apis/ipranges/special-crawlers.json"
-fetch_json_prefixes "google-user-triggered-fetchers" "https://developers.google.com/static/search/apis/ipranges/user-triggered-fetchers.json"
+fetch_json_prefixes "googlebot" "https://developers.google.com/static/crawling/ipranges/common-crawlers.json"
+fetch_json_prefixes "google-special-crawlers" "https://developers.google.com/static/crawling/ipranges/special-crawlers.json"
+fetch_json_prefixes "google-user-triggered-fetchers" "https://developers.google.com/static/crawling/ipranges/user-triggered-agents.json"
 
 fetch_json_prefixes "bingbot" "https://www.bing.com/toolbox/bingbot.json"
 fetch_json_prefixes "duckduckbot" "https://duckduckgo.com/duckduckbot.json"
@@ -81,6 +81,28 @@ fetch_json_prefixes "ahrefsbot" "https://api.ahrefs.com/v3/public/crawler-ip-ran
 fetch_static_prefixes "semrushbot" \
   "85.208.98.0/24" \
   "85.208.98.128/25"
+
+fetch_static_prefixes "serankingbot" \
+  "5.9.48.208" \
+  "46.4.23.25" \
+  "46.4.81.149" \
+  "136.243.103.47" \
+  "136.243.147.42" \
+  "138.201.137.152" \
+  "142.132.128.37" \
+  "142.132.195.214" \
+  "144.76.14.242" \
+  "144.76.15.151" \
+  "144.76.69.81" \
+  "144.76.159.253" \
+  "144.76.164.62" \
+  "144.76.237.123" \
+  "162.55.94.175" \
+  "162.55.94.176" \
+  "162.55.244.19" \
+  "168.119.139.232" \
+  "168.119.64.236" \
+  "176.9.74.49"
 
 imunify360-agent reload-lists
 

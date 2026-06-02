@@ -36,6 +36,12 @@ Imunify360 Jetpack allowlist sync for WordPress.com and Jetpack service requests
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/jetpack/install.sh | bash
 ```
 
+Imunify360 Rank Math allowlist sync for Rank Math API and SEO service requests.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/rankmath/install.sh | bash
+```
+
 Imunify360 Better Stack allowlist sync for uptime monitoring checks.
 
 ```bash
