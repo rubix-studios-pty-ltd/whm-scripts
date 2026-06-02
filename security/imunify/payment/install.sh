@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RAW_BASE="https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/crawlers"
-INSTALL_PATH="/usr/local/sbin/rubix-imunify-crawlers"
-CRON_PATH="/etc/cron.d/rubix-imunify-crawlers"
-LOG_PATH="/var/log/rubix-imunify-crawlers.log"
+RAW_BASE="https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/payment"
+INSTALL_PATH="/usr/local/sbin/rubix-imunify-payment"
+CRON_PATH="/etc/cron.d/rubix-imunify-payment"
+LOG_PATH="/var/log/rubix-imunify-payment.log"
 
-echo "Installing Rubix Imunify crawler whitelist sync..."
+echo "Installing Rubix Imunify payment whitelist sync..."
 
 if [[ "$(id -u)" -ne 0 ]]; then
   echo "This installer must be run as root."
@@ -34,7 +34,7 @@ if ! command -v imunify360-agent >/dev/null 2>&1; then
   exit 1
 fi
 
-curl -fsSL "$RAW_BASE/crawlers.sh" -o "$INSTALL_PATH"
+curl -fsSL "$RAW_BASE/payment.sh" -o "$INSTALL_PATH"
 
 chmod 700 "$INSTALL_PATH"
 chown root:root "$INSTALL_PATH"
@@ -49,9 +49,9 @@ EOF
 chmod 644 "$CRON_PATH"
 chown root:root "$CRON_PATH"
 
-echo "Running initial crawler whitelist sync..."
+echo "Running initial payment whitelist sync..."
 "$INSTALL_PATH"
 
-echo "Installed Rubix Imunify crawler whitelist sync."
+echo "Installed Rubix Imunify payment whitelist sync."
 echo "Cron: $CRON_PATH"
 echo "Log: $LOG_PATH"

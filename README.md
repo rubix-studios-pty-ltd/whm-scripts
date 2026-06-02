@@ -22,6 +22,12 @@ Imunify360 safe webcrawler sync for search engine optimisation and AI search vis
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/crawlers/install.sh | bash
 ```
 
+Imunify360 payment provider sync, ensure payment processing API and webhook allowance.
+
+```
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/payment/install.sh | bash
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
