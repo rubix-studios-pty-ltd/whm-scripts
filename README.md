@@ -6,9 +6,11 @@ A collection of scripts for customising, extending, and automating existing cPan
 
 ### Contact Providers
 
-Collection of WHM iContact provider, allowing WHM to send server contact notifications through the selected provider.
+WHM iContact provider integrations that allow WHM and cPanel server notifications to be sent through supported external services.
 
-**[Ntfy](https://ntfy.sh)** - Integration: [Push alerts for WHM using ntfy](https://rubixstudios.com.au/insights/push-alerts-for-whm-using-ntfy)
+**[Ntfy](https://ntfy.sh)**
+Integration guide 
+[Push alerts for WHM using ntfy](https://rubixstudios.com.au/insights/push-alerts-for-whm-using-ntfy)
 
 ```
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/contact-provider/ntfy/install.sh | bash
@@ -16,16 +18,22 @@ curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/m
 
 ### Security
 
-Imunify360 safe webcrawler sync for search engine optimisation and AI search visibility.
+Imunify360 crawler allowlist sync for approved search engine crawlers, AI crawlers, and visibility tools.
 
 ```
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/crawlers/install.sh | bash
 ```
 
-Imunify360 payment provider sync, ensure payment processing API and webhook allowance.
+Imunify360 payment provider allowlist sync for payment gateway APIs and webhook delivery.
 
 ```
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/payment/install.sh | bash
+```
+
+Imunify360 Instatus allowlist sync for uptime monitoring checks.
+
+```
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/instatus/install.sh | bash
 ```
 
 ## License
