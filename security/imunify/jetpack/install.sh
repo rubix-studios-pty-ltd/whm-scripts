@@ -34,7 +34,7 @@ if ! command -v imunify360-agent >/dev/null 2>&1; then
   exit 1
 fi
 
-curl -fsSL "$RAW_BASE/status.sh" -o "$INSTALL_PATH"
+curl -fsSL "$RAW_BASE/service.sh" -o "$INSTALL_PATH"
 
 chmod 700 "$INSTALL_PATH"
 chown root:root "$INSTALL_PATH"
