@@ -172,13 +172,21 @@ run_source "square-webhooks" fetch_static_prefixes \
   "54.212.177.79" \
   "107.20.218.8"
 
+run_source "checkout-api-live" fetch_plain_list \
+  "checkout-api-live" \
+  "https://www.checkout.com/docs/files/ip-lists/api-live.txt"
+
 run_source "checkout-webhooks-live" fetch_plain_list \
   "checkout-webhooks-live" \
-  "https://checkout.com/docs/public/files/ip-lists/webhooks-live.txt"
+  "https://www.checkout.com/docs/files/ip-lists/webhooks-live.txt"
+
+run_source "checkout-api-sandbox" fetch_plain_list \
+  "checkout-api-sandbox" \
+  "https://www.checkout.com/docs/files/ip-lists/api-sandbox.txt"
 
 run_source "checkout-webhooks-sandbox" fetch_plain_list \
   "checkout-webhooks-sandbox" \
-  "https://checkout.com/docs/public/files/ip-lists/webhooks-sandbox.txt"
+  "https://www.checkout.com/docs/files/ip-lists/webhooks-sandbox.txt"
 
 if command -v dig >/dev/null 2>&1; then
   run_source "adyen-webhooks" fetch_dns_a_records \
