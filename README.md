@@ -30,6 +30,12 @@ Imunify360 payment provider allowlist sync for payment gateway APIs and webhook 
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/payment/install.sh | bash
 ```
 
+Imunify360 Jetpack allowlist sync for WordPress.com and Jetpack service requests.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/jetpack/install.sh | bash
+```
+
 Imunify360 Better Stack allowlist sync for uptime monitoring checks.
 
 ```bash
@@ -40,6 +46,12 @@ Imunify360 Instatus allowlist sync for uptime monitoring checks.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/instatus/install.sh | bash
+```
+
+Imunify360 UptimeRobot allowlist sync for uptime monitoring checks.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/uptimerobot/install.sh | bash
 ```
 
 ## License
