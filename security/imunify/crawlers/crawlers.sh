@@ -62,8 +62,7 @@ require_command curl
 require_command jq
 require_command imunify360-agent
 
-fetch_static_prefixes "applebot" \
-  "17.0.0.0/8"
+fetch_json_prefixes "applebot" "https://search.developer.apple.com/applebot.json"
 
 fetch_json_prefixes "googlebot" "https://developers.google.com/static/search/apis/ipranges/googlebot.json"
 fetch_json_prefixes "google-special-crawlers" "https://developers.google.com/static/search/apis/ipranges/special-crawlers.json"
