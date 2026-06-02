@@ -8,7 +8,7 @@ A collection of scripts for customising, extending, and automating existing cPan
 
 Collection of WHM iContact provider, allowing WHM to send server contact notifications through the selected provider.
 
-**[Ntfy](https://ntfy.sh)**
+**[Ntfy](https://ntfy.sh)** - Integration: [Push alerts for WHM using ntfy](https://rubixstudios.com.au/insights/push-alerts-for-whm-using-ntfy)
 
 ```
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/contact-provider/ntfy/install.sh | bash
