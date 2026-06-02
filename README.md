@@ -14,6 +14,14 @@ Collection of WHM iContact provider, allowing WHM to send server contact notific
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/contact-provider/ntfy/install.sh | bash
 ```
 
+### Security
+
+Imunify360 safe webcrawler sync for search engine optimisation and AI search visibility.
+
+```
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/crawlers/install.sh | bash
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
