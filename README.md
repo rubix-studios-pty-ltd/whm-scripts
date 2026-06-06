@@ -18,7 +18,7 @@ curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/m
 
 ### Security
 
-Imunify360 crawler allowlist sync for approved search engine crawlers, AI crawlers, and visibility tools. (Training AI is not approved)
+Imunify360 crawler allowlist sync for approved search engine crawlers, non-training AI crawlers, and visibility tools.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/crawlers/install.sh | bash
