@@ -18,6 +18,24 @@ curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/m
 
 ### Security
 
+Imunify360 360 Monitoring allowlist sync for uptime monitoring checks.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/360monitoring/install.sh | bash
+```
+
+Imunify360 Better Stack allowlist sync for uptime monitoring checks.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/betterstack/install.sh | bash
+```
+
+Imunify360 Cloudflare allowlist sync for uptime monitoring checks.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/cloudflare/install.sh | bash
+```
+
 Imunify360 crawler allowlist sync for approved search engine crawlers, non-training AI crawlers, and visibility tools.
 
 ```bash
@@ -40,12 +58,6 @@ Imunify360 Rank Math allowlist sync for Rank Math API and SEO service requests.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/rankmath/install.sh | bash
-```
-
-Imunify360 Better Stack allowlist sync for uptime monitoring checks.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/betterstack/install.sh | bash
 ```
 
 Imunify360 Instatus allowlist sync for uptime monitoring checks.
