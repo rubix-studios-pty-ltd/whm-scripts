@@ -47,12 +47,6 @@ Re-run the installer to update the integration from this repository.
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/google/install.sh | bash
 ```
 
-## Notes
-
-This integration is Google-only. It does not include Klaviyo, Akamai, Cloudflare, or other provider ranges.
-
-The Google load balancer health check range `130.211.0.0/22` is included. The incorrect range `30.211.0.0/22` should not be used.
-
 ## Author
 
 Rubix Studios
