@@ -8,7 +8,7 @@ INSTALL_PATH="/usr/local/sbin/rubix-imunify-quiccloud"
 CRON_PATH="/etc/cron.d/rubix-imunify-quiccloud"
 LOG_PATH="/var/log/rubix-imunify-quiccloud.log"
 
-echo "Installing Rubix Imunify 360 Monitoring whitelist sync..."
+echo "Installing Rubix Imunify QUIC.cloud whitelist sync..."
 
 if [[ "$(id -u)" -ne 0 ]]; then
   echo "This installer must be run as root."
@@ -51,9 +51,9 @@ EOF
 chmod 644 "$CRON_PATH"
 chown root:root "$CRON_PATH"
 
-echo "Running initial Imunify 360 Monitoring whitelist sync..."
+echo "Running initial QUIC.cloud whitelist sync..."
 "$INSTALL_PATH"
 
-echo "Installed Rubix Imunify 360 Monitoring whitelist sync."
+echo "Installed Rubix Imunify QUIC.cloud whitelist sync."
 echo "Cron: $CRON_PATH"
 echo "Log: $LOG_PATH"

@@ -8,7 +8,7 @@ INSTALL_PATH="/usr/local/sbin/rubix-imunify-betterstack"
 CRON_PATH="/etc/cron.d/rubix-imunify-betterstack"
 LOG_PATH="/var/log/rubix-imunify-betterstack.log"
 
-echo "Installing Rubix Imunify betterstack whitelist sync..."
+echo "Installing Rubix Imunify Betterstack whitelist sync..."
 
 if [[ "$(id -u)" -ne 0 ]]; then
   echo "This installer must be run as root."
@@ -51,9 +51,9 @@ EOF
 chmod 644 "$CRON_PATH"
 chown root:root "$CRON_PATH"
 
-echo "Running initial betterstack whitelist sync..."
+echo "Running initial Betterstack whitelist sync..."
 "$INSTALL_PATH"
 
-echo "Installed Rubix Imunify betterstack whitelist sync."
+echo "Installed Rubix Imunify Betterstack whitelist sync."
 echo "Cron: $CRON_PATH"
 echo "Log: $LOG_PATH"

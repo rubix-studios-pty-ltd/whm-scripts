@@ -51,7 +51,7 @@ EOF
 chmod 644 "$CRON_PATH"
 chown root:root "$CRON_PATH"
 
-echo "Running initial Imunify Cloudflare whitelist sync..."
+echo "Running initial Cloudflare whitelist sync..."
 "$INSTALL_PATH"
 
 echo "Installed Rubix Imunify Cloudflare whitelist sync."

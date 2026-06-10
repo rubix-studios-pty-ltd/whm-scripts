@@ -8,7 +8,7 @@ INSTALL_PATH="/usr/local/sbin/rubix-imunify-instatus"
 CRON_PATH="/etc/cron.d/rubix-imunify-instatus"
 LOG_PATH="/var/log/rubix-imunify-instatus.log"
 
-echo "Installing Rubix Imunify instatus whitelist sync..."
+echo "Installing Rubix Imunify Instatus whitelist sync..."
 
 if [[ "$(id -u)" -ne 0 ]]; then
   echo "This installer must be run as root."
@@ -51,9 +51,9 @@ EOF
 chmod 644 "$CRON_PATH"
 chown root:root "$CRON_PATH"
 
-echo "Running initial instatus whitelist sync..."
+echo "Running initial Instatus whitelist sync..."
 "$INSTALL_PATH"
 
-echo "Installed Rubix Imunify instatus whitelist sync."
+echo "Installed Rubix Imunify Instatus whitelist sync."
 echo "Cron: $CRON_PATH"
 echo "Log: $LOG_PATH"

@@ -51,7 +51,7 @@ EOF
 chmod 644 "$CRON_PATH"
 chown root:root "$CRON_PATH"
 
-echo "Running initial Imunify 360 Monitoring whitelist sync..."
+echo "Running initial 360 Monitoring whitelist sync..."
 "$INSTALL_PATH"
 
 echo "Installed Rubix Imunify 360 Monitoring whitelist sync."
