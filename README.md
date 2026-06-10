@@ -32,6 +32,14 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 | Rank Math | Allowlist sync for Rank Math API and SEO service requests. | [View](security/imunify/rankmath/README.md) |
 | UptimeRobot | Allowlist sync for UptimeRobot uptime monitoring checks. | [View](security/imunify/uptimerobot/README.md) |
 
+### Mail
+
+WHM and cPanel mail automation scripts for Proxmox Mail Gateway relay domain and transport synchronisation.
+
+| Integration | Description | Installation |
+|---|---|---|
+| cPanel PMG | Sync WHM and cPanel domains with Proxmox Mail Gateway relay domains and transport entries. | [View](mail/proxmox/README.md) |
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
