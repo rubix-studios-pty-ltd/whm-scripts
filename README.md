@@ -2,97 +2,44 @@
 
 A collection of scripts for customising, extending, and automating existing cPanel & WHM installations.
 
-## Script
+Each integration includes its own README inside the same folder as its install script. Use the integration README for installation commands, configuration notes, and implementation details.
+
+## Scripts
 
 ### Contact Providers
 
 WHM iContact provider integrations that allow WHM and cPanel server notifications to be sent through supported external services.
 
-**[Ntfy](https://ntfy.sh)**
-Integration guide 
-[Push alerts for WHM using ntfy](https://rubixstudios.com.au/insights/push-alerts-for-whm-using-ntfy)
+| Integration | Description | README |
+|---|---|---|
+| Ntfy | Send WHM and cPanel server notifications through ntfy. | [View README](contact-provider/ntfy/README.md) |
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/contact-provider/ntfy/install.sh | bash
-```
+Related guide:
+
+[Push alerts for WHM using ntfy](https://rubixstudios.com.au/insights/push-alerts-for-whm-using-ntfy)
 
 ### Security
 
-Imunify360 360 Monitoring allowlist sync for server monitoring.
+Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawlers, payment services, marketing platforms, and other approved service traffic.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/360monitoring/install.sh | bash
-```
-
-Imunify360 Akamai allowlist sync for CDN service requests.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/akamai/install.sh | bash
-```
-
-Imunify360 Better Stack allowlist sync for uptime monitoring checks.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/betterstack/install.sh | bash
-```
-
-Imunify360 Cloudflare allowlist sync for CDN service requests.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/cloudflare/install.sh | bash
-```
-
-Imunify360 crawler allowlist sync for approved search engine crawlers, non-training AI crawlers, and visibility tools.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/crawlers/install.sh | bash
-```
-
-Imunify360 payment provider allowlist sync for payment gateway APIs and webhook delivery.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/payment/install.sh | bash
-```
-
-Imunify360 Klaviyo mailing automation webhooks and callback.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/klaviyo/install.sh | bash
-```
-
-Imunify360 Jetpack allowlist sync for WordPress.com and Jetpack service requests.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/jetpack/install.sh | bash
-```
-
-Imunify360 Instatus allowlist sync for uptime monitoring checks.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/instatus/install.sh | bash
-```
-
-Imunify360 Quic Cloud allowlist sync for CDN service requests.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/quiccloud/install.sh | bash
-```
-
-Imunify360 Rank Math allowlist sync for Rank Math API and SEO service requests.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/rankmath/install.sh | bash
-```
-
-Imunify360 UptimeRobot allowlist sync for uptime monitoring checks.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/uptimerobot/install.sh | bash
-```
+| Integration | Description | README |
+|---|---|---|
+| 360 Monitoring | Allowlist sync for 360 Monitoring server monitoring checks. | [View README](security/imunify/360monitoring/README.md) |
+| Akamai | Allowlist sync for Akamai CDN service requests. | [View README](security/imunify/akamai/README.md) |
+| Better Stack | Allowlist sync for Better Stack uptime monitoring checks. | [View README](security/imunify/betterstack/README.md) |
+| Cloudflare | Allowlist sync for Cloudflare CDN service requests. | [View README](security/imunify/cloudflare/README.md) |
+| Crawlers | Allowlist sync for approved search engine crawlers, non-training AI crawlers, and visibility tools. | [View README](security/imunify/crawlers/README.md) |
+| Payment | Allowlist sync for payment gateway APIs and webhook delivery. | [View README](security/imunify/payment/README.md) |
+| Klaviyo | Allowlist sync for Klaviyo mailing automation webhooks and callbacks. | [View README](security/imunify/klaviyo/README.md) |
+| Jetpack | Allowlist sync for WordPress.com and Jetpack service requests. | [View README](security/imunify/jetpack/README.md) |
+| Instatus | Allowlist sync for Instatus uptime monitoring checks. | [View README](security/imunify/instatus/README.md) |
+| QUIC.cloud | Allowlist sync for QUIC.cloud CDN service requests. | [View README](security/imunify/quiccloud/README.md) |
+| Rank Math | Allowlist sync for Rank Math API and SEO service requests. | [View README](security/imunify/rankmath/README.md) |
+| UptimeRobot | Allowlist sync for UptimeRobot uptime monitoring checks. | [View README](security/imunify/uptimerobot/README.md) |
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Support
 
