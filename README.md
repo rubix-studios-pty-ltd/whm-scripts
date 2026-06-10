@@ -12,7 +12,7 @@ WHM iContact provider integrations that allow WHM and cPanel server notification
 
 | Integration | Description | README |
 |---|---|---|
-| Ntfy | Send WHM and cPanel server notifications through ntfy. | [View README](contact-provider/ntfy/README.md) |
+| Ntfy | Send WHM and cPanel server notifications through ntfy. | [View](contact-provider/ntfy/README.md) |
 
 Related guide:
 
@@ -24,18 +24,18 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 
 | Integration | Description | README |
 |---|---|---|
-| 360 Monitoring | Allowlist sync for 360 Monitoring server monitoring checks. | [View README](security/imunify/360monitoring/README.md) |
-| Akamai | Allowlist sync for Akamai CDN service requests. | [View README](security/imunify/akamai/README.md) |
-| Better Stack | Allowlist sync for Better Stack uptime monitoring checks. | [View README](security/imunify/betterstack/README.md) |
-| Cloudflare | Allowlist sync for Cloudflare CDN service requests. | [View README](security/imunify/cloudflare/README.md) |
-| Crawlers | Allowlist sync for approved search engine crawlers, non-training AI crawlers, and visibility tools. | [View README](security/imunify/crawlers/README.md) |
-| Payment | Allowlist sync for payment gateway APIs and webhook delivery. | [View README](security/imunify/payment/README.md) |
-| Klaviyo | Allowlist sync for Klaviyo mailing automation webhooks and callbacks. | [View README](security/imunify/klaviyo/README.md) |
-| Jetpack | Allowlist sync for WordPress.com and Jetpack service requests. | [View README](security/imunify/jetpack/README.md) |
-| Instatus | Allowlist sync for Instatus uptime monitoring checks. | [View README](security/imunify/instatus/README.md) |
-| QUIC.cloud | Allowlist sync for QUIC.cloud CDN service requests. | [View README](security/imunify/quiccloud/README.md) |
-| Rank Math | Allowlist sync for Rank Math API and SEO service requests. | [View README](security/imunify/rankmath/README.md) |
-| UptimeRobot | Allowlist sync for UptimeRobot uptime monitoring checks. | [View README](security/imunify/uptimerobot/README.md) |
+| 360 Monitoring | Allowlist sync for 360 Monitoring server monitoring checks. | [View](security/imunify/360monitoring/README.md) |
+| Akamai | Allowlist sync for Akamai CDN service requests. | [View](security/imunify/akamai/README.md) |
+| Better Stack | Allowlist sync for Better Stack uptime monitoring checks. | [View](security/imunify/betterstack/README.md) |
+| Cloudflare | Allowlist sync for Cloudflare CDN service requests. | [View](security/imunify/cloudflare/README.md) |
+| Crawlers | Allowlist sync for approved search engine crawlers, non-training AI crawlers, and visibility tools. | [View](security/imunify/crawlers/README.md) |
+| Payment | Allowlist sync for payment gateway APIs and webhook delivery. | [View](security/imunify/payment/README.md) |
+| Klaviyo | Allowlist sync for Klaviyo mailing automation webhooks and callbacks. | [View](security/imunify/klaviyo/README.md) |
+| Jetpack | Allowlist sync for WordPress.com and Jetpack service requests. | [View](security/imunify/jetpack/README.md) |
+| Instatus | Allowlist sync for Instatus uptime monitoring checks. | [View](security/imunify/instatus/README.md) |
+| QUIC.cloud | Allowlist sync for QUIC.cloud CDN service requests. | [View](security/imunify/quiccloud/README.md) |
+| Rank Math | Allowlist sync for Rank Math API and SEO service requests. | [View](security/imunify/rankmath/README.md) |
+| UptimeRobot | Allowlist sync for UptimeRobot uptime monitoring checks. | [View](security/imunify/uptimerobot/README.md) |
 
 ## License
 
