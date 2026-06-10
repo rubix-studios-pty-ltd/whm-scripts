@@ -14,12 +14,18 @@ curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/m
 
 ## What This Installs
 
-The installer adds the ntfy contact provider into the WHM iContact provider path.
+The installer adds the ntfy contact provider and schema files into the WHM iContact provider path.
 
-Typical WHM provider location:
+Provider file:
 
 ```bash
-/usr/local/cpanel/Cpanel/iContact/Provider/
+/var/cpanel/perl/Cpanel/iContact/Provider/Ntfy.pm
+```
+
+Schema file:
+
+```bash
+/var/cpanel/perl/Cpanel/iContact/Provider/Schema/Ntfy.pm
 ```
 
 After installation, the provider can be configured from WHM notification settings.
@@ -29,7 +35,7 @@ After installation, the provider can be configured from WHM notification setting
 After installation, configure the provider in WHM.
 
 1. Log in to WHM as `root`.
-2. Open **Contact Manager**.
+2. Open **Server Contacts > Contact Manager**.
 3. Enable the ntfy contact provider.
 4. Enter the ntfy topic or endpoint details required by the provider.
 5. Send a test notification to confirm delivery.
@@ -54,12 +60,18 @@ Use a private, hard-to-guess topic name if using the public ntfy service.
 
 ## Verification
 
-After installing and configuring the provider, trigger a WHM test notification from Contact Manager.
-
-You can also confirm the provider file exists with:
+After installing the provider, confirm both files exist:
 
 ```bash
-ls -lah /usr/local/cpanel/Cpanel/iContact/Provider/ | grep -i ntfy
+ls -lah /var/cpanel/perl/Cpanel/iContact/Provider/Ntfy.pm
+ls -lah /var/cpanel/perl/Cpanel/iContact/Provider/Schema/Ntfy.pm
+```
+
+You can also confirm the provider files contain the expected ntfy classes:
+
+```bash
+grep -i "ntfy" /var/cpanel/perl/Cpanel/iContact/Provider/Ntfy.pm
+grep -i "ntfy" /var/cpanel/perl/Cpanel/iContact/Provider/Schema/Ntfy.pm
 ```
 
 ## Updating
@@ -79,3 +91,8 @@ curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/m
 This integration is intended for WHM and cPanel servers.
 
 Review the installed provider and test notification delivery before relying on it for production alerting.
+
+## Author
+
+Rubix Studios  
+[https://rubixstudios.com.au](https://rubixstudios.com.au)
