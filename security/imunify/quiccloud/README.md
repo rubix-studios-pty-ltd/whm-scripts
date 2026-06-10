@@ -1,4 +1,4 @@
-# Imunify360 QUIC.cloud Allowlist Sync
+# Imunify360 QUIC.cloud
 
 Imunify360 allowlist sync for QUIC.cloud CDN service requests.
 

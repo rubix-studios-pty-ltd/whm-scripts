@@ -1,4 +1,4 @@
-# Imunify360 Better Stack Allowlist Sync
+# Imunify360 Better Stack
 
 Imunify360 allowlist sync for Better Stack uptime monitoring checks.
 

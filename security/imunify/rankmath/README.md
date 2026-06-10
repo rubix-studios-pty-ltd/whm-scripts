@@ -1,4 +1,4 @@
-# Imunify360 Rank Math Allowlist Sync
+# Imunify360 Rank Math
 
 Imunify360 allowlist sync for Rank Math API and SEO service requests.
 

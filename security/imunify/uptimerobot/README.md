@@ -1,4 +1,4 @@
-# Imunify360 UptimeRobot Allowlist Sync
+# Imunify360 UptimeRobot
 
 Imunify360 allowlist sync for UptimeRobot uptime monitoring checks.
 

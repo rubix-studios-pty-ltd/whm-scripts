@@ -1,4 +1,4 @@
-# Imunify360 360 Monitoring Allowlist Sync
+# Imunify360 360 Monitoring
 
 Imunify360 allowlist sync for 360 Monitoring server monitoring checks.
 

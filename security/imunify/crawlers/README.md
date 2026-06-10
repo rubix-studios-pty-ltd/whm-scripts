@@ -1,4 +1,4 @@
-# Imunify360 Crawler Allowlist Sync
+# Imunify360 Crawlers
 
 Imunify360 allowlist sync for approved search engine crawlers, non-training AI crawlers, and visibility tools.
 

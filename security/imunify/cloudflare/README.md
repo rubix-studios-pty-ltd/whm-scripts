@@ -1,4 +1,4 @@
-# Imunify360 Cloudflare Allowlist Sync
+# Imunify360 Cloudflare
 
 Imunify360 allowlist sync for Cloudflare CDN service requests.
 

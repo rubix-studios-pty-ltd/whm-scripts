@@ -1,4 +1,4 @@
-# Imunify360 Klaviyo Allowlist Sync
+# Imunify360 Klaviyo
 
 Imunify360 allowlist sync for Klaviyo mailing automation webhooks and callbacks.
 

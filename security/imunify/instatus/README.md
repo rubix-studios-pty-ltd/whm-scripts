@@ -1,4 +1,4 @@
-# Imunify360 Instatus Allowlist Sync
+# Imunify360 Instatus
 
 Imunify360 allowlist sync for Instatus uptime monitoring checks.
 

@@ -1,4 +1,4 @@
-# Imunify360 Jetpack Allowlist Sync
+# Imunify360 Jetpack
 
 Imunify360 allowlist sync for WordPress.com and Jetpack service requests.
 

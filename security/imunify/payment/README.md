@@ -1,4 +1,4 @@
-# Imunify360 Payment Provider Allowlist Sync
+# Imunify360 Payment Provider
 
 Imunify360 allowlist sync for payment gateway APIs and webhook delivery.
 

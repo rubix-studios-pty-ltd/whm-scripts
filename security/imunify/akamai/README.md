@@ -1,4 +1,4 @@
-# Imunify360 Akamai Allowlist Sync
+# Imunify360 Akamai
 
 Imunify360 allowlist sync for Akamai CDN service requests.
 

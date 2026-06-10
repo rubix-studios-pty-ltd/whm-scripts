@@ -87,8 +87,8 @@ run_source "quic-cloud" fetch_plain_list \
 imunify360-agent reload-lists
 
 if [ "$FAILURES" -gt 0 ]; then
-  echo "Quic Cloud whitelist sync complete with $FAILURES failed source(s)."
+  echo "QUIC.cloud whitelist sync complete with $FAILURES failed source(s)."
   exit 1
 fi
 
-echo "Quic Cloud whitelist sync complete."
+echo "QUIC.cloud whitelist sync complete."
