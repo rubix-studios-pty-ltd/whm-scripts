@@ -62,9 +62,11 @@ fetch_plain_list() {
   {
     echo "$COMMENT_PREFIX service=$name updated=$DATE source=$url"
     curl -fsSL --connect-timeout 15 --max-time 60 "$url" \
+      | sed -E 's#<[bB][rR][[:space:]]*/?>#\
+#g' \
       | sed 's/\r$//' \
       | sed 's/[[:space:]]*$//' \
-      | grep -Ev '^\s*$|^\s*#' \
+      | grep -Ev '^[[:space:]]*$|^[[:space:]]*#' \
       | sort -u
   } > "$tmp_out"
 
