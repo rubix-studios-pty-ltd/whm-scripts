@@ -24,6 +24,7 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 | Cloudflare | Allowlist sync for Cloudflare CDN service requests. | [View](security/imunify/cloudflare/README.md) |
 | Crawlers | Allowlist sync for search engine crawlers and visibility tools. | [View](security/imunify/crawlers/README.md) |
 | Fastly | Allowlist sync for Fastly CDN, edge, and proxy service requests. | [View](security/imunify/fastly/README.md) |
+| Google | Allowlist sync for Google load balancer, health check and service ranges. | [View](security/imunify/google-lb/README.md) |
 | Payment Providers | Allowlist sync for payment gateway APIs and webhook delivery. | [View](security/imunify/payment/README.md) |
 | Klaviyo | Allowlist sync for Klaviyo mailing automation webhooks and callbacks. | [View](security/imunify/klaviyo/README.md) |
 | Jetpack | Allowlist sync for WordPress.com and Jetpack service requests. | [View](security/imunify/jetpack/README.md) |
