@@ -3,7 +3,15 @@
 exec 9>/var/run/pmg-sync.lock
 flock -n 9 || exit 0
 
-source /root/.pmg-sync.env
+ENV_FILE="/root/.pmg-sync.env"
+
+if [ ! -r "$ENV_FILE" ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: Missing or unreadable env file: $ENV_FILE"
+    exit 1
+fi
+
+# shellcheck disable=SC1090
+source "$ENV_FILE"
 
 FORCE_IPV4="${FORCE_IPV4:-true}"
 CURL_OPTS=(-sS -k --connect-timeout 10)
