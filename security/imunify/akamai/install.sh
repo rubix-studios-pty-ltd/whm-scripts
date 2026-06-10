@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RAW_BASE="https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/cloudflare"
+RAW_BASE="https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/akamai"
 SCRIPT_URL="$RAW_BASE/service.sh"
 
-INSTALL_PATH="/usr/local/sbin/rubix-imunify-cloudflare"
-CRON_PATH="/etc/cron.d/rubix-imunify-cloudflare"
-LOG_PATH="/var/log/rubix-imunify-cloudflare.log"
+INSTALL_PATH="/usr/local/sbin/rubix-imunify-akamai"
+CRON_PATH="/etc/cron.d/rubix-imunify-akamai"
+LOG_PATH="/var/log/rubix-imunify-akamai.log"
 
-echo "Installing Rubix Imunify Cloudflare whitelist sync..."
+echo "Installing Rubix Imunify Akamai whitelist sync..."
 
 if [[ "$(id -u)" -ne 0 ]]; then
   echo "This installer must be run as root."
@@ -51,9 +51,9 @@ EOF
 chmod 644 "$CRON_PATH"
 chown root:root "$CRON_PATH"
 
-echo "Running initial Imunify Cloudflare whitelist sync..."
+echo "Running initial Imunify Akamai whitelist sync..."
 "$INSTALL_PATH"
 
-echo "Installed Rubix Imunify Cloudflare whitelist sync."
+echo "Installed Rubix Imunify Akamai whitelist sync."
 echo "Cron: $CRON_PATH"
 echo "Log: $LOG_PATH"

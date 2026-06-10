@@ -2,7 +2,7 @@
 set -euo pipefail
 
 RAW_BASE="https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/quiccloud"
-SCRIPT_URL="$RAW_BASE/status.sh"
+SCRIPT_URL="$RAW_BASE/service.sh"
 
 INSTALL_PATH="/usr/local/sbin/rubix-imunify-quiccloud"
 CRON_PATH="/etc/cron.d/rubix-imunify-quiccloud"

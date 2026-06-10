@@ -24,6 +24,12 @@ Imunify360 360 Monitoring allowlist sync for server monitoring.
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/360monitoring/install.sh | bash
 ```
 
+Imunify360 Akamai allowlist sync for CDN service requests.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/akamai/install.sh | bash
+```
+
 Imunify360 Better Stack allowlist sync for uptime monitoring checks.
 
 ```bash
