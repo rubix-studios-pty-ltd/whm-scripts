@@ -38,7 +38,7 @@ WHM and cPanel mail automation scripts for Proxmox Mail Gateway relay domain and
 
 | Integration | Description | Installation |
 |---|---|---|
-| cPanel PMG | Sync WHM and cPanel domains with Proxmox Mail Gateway relay domains and transport entries. | [View](mail/proxmox/README.md) |
+| PMG | Sync cPanel domains with Proxmox Mail Gateway relay domains and transport. | [View](mail/proxmox/README.md) |
 
 ## License
 
