@@ -2,15 +2,13 @@
 
 A collection of scripts for customising, extending, and automating existing cPanel & WHM installations.
 
-Each integration includes its own README inside the same folder as its install script. Use the integration README for installation commands, configuration notes, and implementation details.
-
 ## Scripts
 
 ### Contact Providers
 
 WHM iContact provider integrations that allow WHM and cPanel server notifications to be sent through supported external services.
 
-| Integration | Description | README |
+| Integration | Description | Installation |
 |---|---|---|
 | Ntfy | Send WHM and cPanel server notifications through ntfy. | [View](contact-provider/ntfy/README.md) |
 
@@ -22,7 +20,7 @@ Related guide:
 
 Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawlers, payment services, marketing platforms, and other approved service traffic.
 
-| Integration | Description | README |
+| Integration | Description | Installation |
 |---|---|---|
 | 360 Monitoring | Allowlist sync for 360 Monitoring server monitoring checks. | [View](security/imunify/360monitoring/README.md) |
 | Akamai | Allowlist sync for Akamai CDN service requests. | [View](security/imunify/akamai/README.md) |
