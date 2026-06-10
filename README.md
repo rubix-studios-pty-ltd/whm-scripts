@@ -18,7 +18,7 @@ curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/m
 
 ### Security
 
-Imunify360 360 Monitoring allowlist sync for uptime monitoring checks.
+Imunify360 360 Monitoring allowlist sync for server monitoring.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/360monitoring/install.sh | bash
@@ -30,7 +30,7 @@ Imunify360 Better Stack allowlist sync for uptime monitoring checks.
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/betterstack/install.sh | bash
 ```
 
-Imunify360 Cloudflare allowlist sync for uptime monitoring checks.
+Imunify360 Cloudflare allowlist sync for CDN service requests.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/cloudflare/install.sh | bash
@@ -48,6 +48,12 @@ Imunify360 payment provider allowlist sync for payment gateway APIs and webhook 
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/payment/install.sh | bash
 ```
 
+Imunify360 Klaviyo mailing automation webhooks and callback.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/klaviyo/install.sh | bash
+```
+
 Imunify360 Jetpack allowlist sync for WordPress.com and Jetpack service requests.
 
 ```bash
@@ -60,7 +66,7 @@ Imunify360 Instatus allowlist sync for uptime monitoring checks.
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/instatus/install.sh | bash
 ```
 
-Imunify360 Quic Cloud allowlist sync for Rank Math API and SEO service requests.
+Imunify360 Quic Cloud allowlist sync for CDN service requests.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/quiccloud/install.sh | bash
