@@ -12,10 +12,6 @@ WHM iContact provider integrations that allow WHM and cPanel server notification
 |---|---|---|
 | Ntfy | Send WHM and cPanel server notifications through ntfy. | [View](contact-provider/ntfy/README.md) |
 
-Related guide:
-
-[Push alerts for WHM using ntfy](https://rubixstudios.com.au/insights/push-alerts-for-whm-using-ntfy)
-
 ### Security
 
 Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawlers, payment services, marketing platforms, and other approved service traffic.
