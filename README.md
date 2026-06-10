@@ -22,7 +22,7 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 | Akamai | Allowlist sync for Akamai CDN service requests. | [View](security/imunify/akamai/README.md) |
 | Better Stack | Allowlist sync for Better Stack uptime monitoring checks. | [View](security/imunify/betterstack/README.md) |
 | Cloudflare | Allowlist sync for Cloudflare CDN service requests. | [View](security/imunify/cloudflare/README.md) |
-| Crawlers | Allowlist sync for approved search engine crawlers, non-training AI crawlers, and visibility tools. | [View](security/imunify/crawlers/README.md) |
+| Crawlers | Allowlist sync for search engine crawlers and visibility tools. | [View](security/imunify/crawlers/README.md) |
 | Payment | Allowlist sync for payment gateway APIs and webhook delivery. | [View](security/imunify/payment/README.md) |
 | Klaviyo | Allowlist sync for Klaviyo mailing automation webhooks and callbacks. | [View](security/imunify/klaviyo/README.md) |
 | Jetpack | Allowlist sync for WordPress.com and Jetpack service requests. | [View](security/imunify/jetpack/README.md) |
