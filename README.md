@@ -34,7 +34,7 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 
 ### Mail
 
-WHM and cPanel mail automation scripts for Proxmox Mail Gateway relay domain and transport synchronisation.
+Mail automation scripts for WHM and cPanel servers, covering gateway integration, relay routing and mail infrastructure management.
 
 | Integration | Description | Installation |
 |---|---|---|
