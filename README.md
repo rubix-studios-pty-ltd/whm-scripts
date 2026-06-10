@@ -1,6 +1,6 @@
 # WHM and cPanel Extensions and Scripts
 
-A collection of scripts and integrations for extending, automating and managing cPanel and WHM hosting infrastructure.
+A collection of scripts and integrations for extending, automating and managing cPanel and WHM hosting infrastructure. Built for server administrators and hosting providers who need practical tooling around notifications, service integrations, security operations and infrastructure workflows.
 
 ## Scripts
 
