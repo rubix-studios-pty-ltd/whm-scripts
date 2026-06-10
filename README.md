@@ -54,16 +54,22 @@ Imunify360 Jetpack allowlist sync for WordPress.com and Jetpack service requests
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/jetpack/install.sh | bash
 ```
 
-Imunify360 Rank Math allowlist sync for Rank Math API and SEO service requests.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/rankmath/install.sh | bash
-```
-
 Imunify360 Instatus allowlist sync for uptime monitoring checks.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/instatus/install.sh | bash
+```
+
+Imunify360 Quic Cloud allowlist sync for Rank Math API and SEO service requests.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/quiccloud/install.sh | bash
+```
+
+Imunify360 Rank Math allowlist sync for Rank Math API and SEO service requests.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/rankmath/install.sh | bash
 ```
 
 Imunify360 UptimeRobot allowlist sync for uptime monitoring checks.
