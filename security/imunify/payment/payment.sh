@@ -85,6 +85,33 @@ fetch_json_array() {
   install_list "$name" "$tmp_out"
 }
 
+fetch_braintree_json() {
+  local name="$1"
+  local url="$2"
+
+  local tmp_json="$TMP_DIR/${name}.json"
+  local tmp_out="$TMP_DIR/${name}.txt"
+
+  echo "Fetching $name from $url"
+
+  curl -fsSL --connect-timeout 15 --max-time 60 "$url" -o "$tmp_json"
+
+  {
+    echo "$COMMENT_PREFIX payment=$name updated=$DATE source=$url"
+
+    jq -r '
+      .production.cidrs[]?,
+      .production.ips[]?,
+      .production.outboundIps[]?,
+      .sandbox.cidrs[]?,
+      .sandbox.ips[]?,
+      .sandbox.outboundIps[]?
+    ' "$tmp_json" | sort -u
+  } > "$tmp_out"
+
+  install_list "$name" "$tmp_out"
+}
+
 fetch_plain_list() {
   local name="$1"
   local url="$2"
@@ -141,6 +168,10 @@ run_source "stripe-webhooks" fetch_json_array \
   "stripe-webhooks" \
   "https://stripe.com/files/ips/ips_webhooks.json" \
   "WEBHOOKS"
+
+run_source "braintree" fetch_braintree_json \
+  "braintree" \
+  "https://assets.braintreegateway.com/json/ips.json"
 
 run_source "paypal" fetch_static_prefixes \
   "paypal" \
@@ -341,6 +372,17 @@ run_source "airwallex" fetch_static_prefixes \
   "136.110.35.143" \
   "34.142.189.194" \
   "35.197.128.86"
+
+run_source "bluesnap" fetch_static_prefixes \
+  "bluesnap" \
+  "141.226.140.200" \
+  "141.226.141.200" \
+  "141.226.142.200" \
+  "141.226.143.200" \
+  "141.226.140.100" \
+  "141.226.141.100" \
+  "141.226.142.100" \
+  "141.226.143.100"
 
 imunify360-agent reload-lists
 
