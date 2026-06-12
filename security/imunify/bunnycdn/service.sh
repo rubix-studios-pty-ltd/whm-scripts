@@ -22,38 +22,11 @@ require_command() {
   fi
 }
 
-count_entries() {
-  local file="$1"
-
-  awk '
-    /^[[:space:]]*$/ { next }
-    /^[[:space:]]*#/ { next }
-    { count++ }
-    END { print count + 0 }
-  ' "$file"
-}
-
 is_valid_list() {
   local file="$1"
 
-  awk '
-    /^[[:space:]]*$/ { next }
-    /^[[:space:]]*#/ { next }
-
-    /^([0-9]{1,3}\.){3}[0-9]{1,3}(\/[0-9]{1,2})?$/ {
-      found = 1
-      next
-    }
-
-    /^([0-9A-Fa-f]{1,4}:){2,}[0-9A-Fa-f:]{1,39}(\/[0-9]{1,3})?$/ {
-      found = 1
-      next
-    }
-
-    END {
-      exit(found ? 0 : 1)
-    }
-  ' "$file"
+  grep -Ev '^[[:space:]]*($|#)' "$file" | grep -Eq \
+    '^(([0-9]{1,3}\.){3}[0-9]{1,3})(/[0-9]{1,2})?$|^([0-9A-Fa-f]{1,4}:){2,}[0-9A-Fa-f:]{1,39}(/[0-9]{1,3})?$'
 }
 
 install_list() {
@@ -87,7 +60,6 @@ fetch_ip_token_list() {
   local url="$2"
   local raw="$TMP_DIR/${name}.raw"
   local tmp_out="$TMP_DIR/${name}.txt"
-  local parsed_count
 
   echo "Fetching $name from $url"
 
@@ -106,23 +78,12 @@ fetch_ip_token_list() {
     ) | sort -u
   } > "$tmp_out"
 
-  parsed_count="$(count_entries "$tmp_out")"
-  echo "Parsed $parsed_count entries for $name"
-
-  if [ "$parsed_count" -eq 0 ]; then
-    echo "Response preview for $name:"
-    head -c 500 "$raw"
-    echo
-  fi
-
   install_list "$name" "$tmp_out"
 }
 
 require_command curl
 require_command grep
-require_command awk
 require_command sort
-require_command head
 require_command install
 require_command imunify360-agent
 
