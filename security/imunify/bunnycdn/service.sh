@@ -24,8 +24,8 @@ require_command() {
 is_valid_list() {
   local file="$1"
 
-  grep -Ev '^\s*$|^\s*#' "$file" | grep -Eq \
-    '^(([0-9]{1,3}\.){3}[0-9]{1,3})(/[0-9]{1,2})?$|^[0-9a-fA-F:]+(/[0-9]{1,3})?$'
+  grep -Ev '^[[:space:]]*($|#)' "$file" | grep -Eq \
+    '^(([0-9]{1,3}\.){3}[0-9]{1,3})(/[0-9]{1,2})?$|^([0-9A-Fa-f]*:){2,}[0-9A-Fa-f:]+(/[0-9]{1,3})?$'
 }
 
 install_list() {
@@ -54,22 +54,22 @@ run_source() {
 fetch_xml_string_list() {
   local name="$1"
   local url="$2"
-
   local tmp_out="$TMP_DIR/${name}.txt"
 
   echo "Fetching $name from $url"
 
   {
     echo "$COMMENT_PREFIX service=$name updated=$DATE source=$url"
+
     curl -fsSL --connect-timeout 15 --max-time 60 "$url" \
-      | sed 's/\r$//' \
-      | sed 's#<string>#\
-<string>#g' \
-      | sed -n 's#.*<string>\([^<]*\)</string>.*#\1#p' \
-      | sed 's/[[:space:]]*$//' \
-      | grep -Ev '^\s*$|^\s*#' \
+      | tr '<>' '\n' \
+      | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' \
+      | grep -E \
+          '^(([0-9]{1,3}\.){3}[0-9]{1,3})(/[0-9]{1,2})?$|^([0-9A-Fa-f]*:){2,}[0-9A-Fa-f:]+(/[0-9]{1,3})?$' \
       | sort -u
   } > "$tmp_out"
+
+  echo "Parsed $(grep -Ev '^[[:space:]]*($|#)' "$tmp_out" | wc -l) entries for $name"
 
   install_list "$name" "$tmp_out"
 }
@@ -84,6 +84,10 @@ require_command imunify360-agent
 run_source "bunnycdn" fetch_xml_string_list \
   "bunnycdn" \
   "https://bunnycdn.com/api/system/edgeserverlist"
+
+run_source "bunnycdn-ipv6" fetch_xml_string_list \
+  "bunnycdn-ipv6" \
+  "https://bunnycdn.com/api/system/edgeserverlist/IPv6"
 
 imunify360-agent reload-lists
 

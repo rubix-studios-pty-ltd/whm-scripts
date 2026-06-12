@@ -9,7 +9,7 @@ This integration allows approved WP Rocket service requests to reach a WHM and c
 Run the installer as `root` on the WHM server.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/wprocket/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/wp-rocket/install.sh | bash
 ```
 
 ## What This Does
@@ -32,7 +32,7 @@ The sync retrieves WP Rocket IP ranges from the WP Rocket plain IPv4 and IPv6 li
 Re-run the installer to update the integration from this repository.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/wprocket/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/rubix-studios-pty-ltd/whm-scripts/main/security/imunify/wp-rocket/install.sh | bash
 ```
 
 ## Author
