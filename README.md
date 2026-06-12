@@ -20,8 +20,11 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 |---|---|---|
 | 360 Monitoring | Allowlist sync for 360 Monitoring server monitoring checks. | [View](security/imunify/360monitoring/README.md) |
 | Akamai | Allowlist sync for Akamai CDN service requests. | [View](security/imunify/akamai/README.md) |
+| Amazon S3 | Allowlist sync for Amazon S3 storage, media, backup, and integration requests. | [View](security/imunify/amazon-s3/README.md) |
 | Better Stack | Allowlist sync for Better Stack uptime monitoring checks. | [View](security/imunify/betterstack/README.md) |
+| BunnyCDN | Allowlist sync for BunnyCDN CDN, cache, pull zone, and edge service requests. | [View](security/imunify/bunnycdn/README.md) |
 | Cloudflare | Allowlist sync for Cloudflare CDN service requests. | [View](security/imunify/cloudflare/README.md) |
+| CloudFront | Allowlist sync for Amazon CloudFront global and regional edge service requests. | [View](security/imunify/cloudfront/README.md) |
 | Crawlers | Allowlist sync for search engine crawlers and visibility tools. | [View](security/imunify/crawlers/README.md) |
 | Fastly | Allowlist sync for Fastly CDN, edge, and proxy service requests. | [View](security/imunify/fastly/README.md) |
 | Google | Allowlist sync for Google load balancer, health check and service ranges. | [View](security/imunify/google-lb/README.md) |
@@ -32,6 +35,7 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 | QUIC.cloud | Allowlist sync for QUIC.cloud CDN service requests. | [View](security/imunify/quiccloud/README.md) |
 | Rank Math | Allowlist sync for Rank Math API and SEO service requests. | [View](security/imunify/rankmath/README.md) |
 | UptimeRobot | Allowlist sync for UptimeRobot uptime monitoring checks. | [View](security/imunify/uptimerobot/README.md) |
+| WP Rocket | Allowlist sync for WP Rocket cache, preload, optimisation, and service requests. | [View](security/imunify/wp-rocket/README.md) |
 
 ### Mail
 
