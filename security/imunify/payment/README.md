@@ -37,6 +37,7 @@ Included payment integrations:
 - PayPal
 - PAYONE
 - Paystack
+- Przelewy24
 - Skrill
 - Stripe API
 - Stripe Armada Gator

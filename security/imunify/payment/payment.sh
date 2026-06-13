@@ -355,6 +355,16 @@ run_source "paystack" fetch_static_prefixes \
   "52.49.173.169" \
   "52.214.14.220"
 
+run_source "przelewy24" fetch_static_prefixes \
+  "przelewy24" \
+  "5.252.202.255" \
+  "5.252.202.254" \
+  "20.215.81.124" \
+  "193.178.213.0/24" \
+  "91.220.177.0/24" \
+  "20.215.183.48/28" \
+  "134.112.88.8/29"
+
 run_source "skrill" fetch_static_prefixes \
   "skrill" \
   "91.208.28.0/2" \
