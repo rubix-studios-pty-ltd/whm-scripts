@@ -174,7 +174,7 @@ EOF
 setup_log_file() {
     touch "$LOG_FILE"
     chown root:root "$LOG_FILE"
-    chmod 644 "$LOG_FILE"
+    chmod 600 "$LOG_FILE"
 
     log "Log file ready: $LOG_FILE"
 }
