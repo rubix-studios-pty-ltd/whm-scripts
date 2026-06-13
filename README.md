@@ -20,9 +20,9 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 |---|---|---|
 | 360 Monitoring | Allowlist sync for 360 Monitoring server monitoring checks. | [View](security/imunify/360monitoring/README.md) |
 | Akamai | Allowlist sync for Akamai CDN service requests. | [View](security/imunify/akamai/README.md) |
-| Amazon S3 | Allowlist sync for Amazon S3 storage, media, backup, and integration requests. | [View](security/imunify/amazon-s3/README.md) |
+| Amazon S3 | Allowlist sync for Amazon S3 storage, media, backup, and integration. | [View](security/imunify/amazon-s3/README.md) |
 | Better Stack | Allowlist sync for Better Stack uptime monitoring checks. | [View](security/imunify/betterstack/README.md) |
-| BunnyCDN | Allowlist sync for BunnyCDN CDN, cache, pull zone, and edge service requests. | [View](security/imunify/bunnycdn/README.md) |
+| BunnyCDN | Allowlist sync for BunnyCDN CDN, cache, pull zone, and edge services. | [View](security/imunify/bunnycdn/README.md) |
 | Cloudflare | Allowlist sync for Cloudflare CDN service requests. | [View](security/imunify/cloudflare/README.md) |
 | CloudFront | Allowlist sync for Amazon CloudFront global and regional edge services. | [View](security/imunify/cloudfront/README.md) |
 | CodeGuard | Allowlist sync for CodeGuard backup, restore, monitoring, and file detection. | [View](security/imunify/codeguard/README.md) |
@@ -39,11 +39,11 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 | Payment Providers | Allowlist sync for payment gateway APIs and webhook delivery. | [View](security/imunify/payment/README.md) |
 | Klaviyo | Allowlist sync for Klaviyo mailing automation webhooks and callbacks. | [View](security/imunify/klaviyo/README.md) |
 | Jetpack | Allowlist sync for WordPress.com and Jetpack service requests. | [View](security/imunify/jetpack/README.md) |
-| Imperva | Allowlist sync for Imperva CDN, WAF, proxy, cache, and edge service requests. | [View](security/imunify/imperva/README.md) |
+| Imperva | Allowlist sync for Imperva CDN, WAF, proxy, cache, and edge service. | [View](security/imunify/imperva/README.md) |
 | Instatus | Allowlist sync for Instatus uptime monitoring checks. | [View](security/imunify/instatus/README.md) |
 | QUIC.cloud | Allowlist sync for QUIC.cloud CDN service requests. | [View](security/imunify/quiccloud/README.md) |
 | Rank Math | Allowlist sync for Rank Math API and SEO service requests. | [View](security/imunify/rankmath/README.md) |
-| Sucuri | Allowlist sync for Sucuri WAF, CDN, proxy, malware scanning security services. | [View](security/imunify/sucuri/README.md) |
+| Sucuri | Allowlist sync for Sucuri WAF, CDN, proxy, malware and security services. | [View](security/imunify/sucuri/README.md) |
 | UptimeRobot | Allowlist sync for UptimeRobot uptime monitoring checks. | [View](security/imunify/uptimerobot/README.md) |
 | Wordfence | Allowlist sync for Wordfence security scans, remote checks, and diagnostics. | [View](security/imunify/wordfence/README.md) |
 | WP Compress | Allowlist sync for WP Compress image optimisation, CDN, and media. | [View](security/imunify/wp-compress/README.md) |
