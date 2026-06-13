@@ -43,7 +43,9 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 | Instatus | Allowlist sync for Instatus uptime monitoring checks. | [View](security/imunify/instatus/README.md) |
 | QUIC.cloud | Allowlist sync for QUIC.cloud CDN service requests. | [View](security/imunify/quiccloud/README.md) |
 | Rank Math | Allowlist sync for Rank Math API and SEO service requests. | [View](security/imunify/rankmath/README.md) |
+| StatusCake | Allowlist sync for StatusCake uptime monitoring checks. | [View](security/imunify/statuscake/README.md) |
 | Sucuri | Allowlist sync for Sucuri WAF, CDN, proxy, malware and security services. | [View](security/imunify/sucuri/README.md) |
+| StatusCake | Allowlist sync for StatusCake uptime monitoring checks. | [View](security/imunify/statuscake/README.md) |
 | UptimeRobot | Allowlist sync for UptimeRobot uptime monitoring checks. | [View](security/imunify/uptimerobot/README.md) |
 | Wordfence | Allowlist sync for Wordfence security scans, remote checks, and diagnostics. | [View](security/imunify/wordfence/README.md) |
 | WP Compress | Allowlist sync for WP Compress image optimisation, CDN, and media. | [View](security/imunify/wp-compress/README.md) |
