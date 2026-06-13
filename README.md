@@ -39,12 +39,16 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 | Payment Providers | Allowlist sync for payment gateway APIs and webhook delivery. | [View](security/imunify/payment/README.md) |
 | Klaviyo | Allowlist sync for Klaviyo mailing automation webhooks and callbacks. | [View](security/imunify/klaviyo/README.md) |
 | Jetpack | Allowlist sync for WordPress.com and Jetpack service requests. | [View](security/imunify/jetpack/README.md) |
+| Imperva | Allowlist sync for Imperva CDN, WAF, proxy, cache, and edge service requests. | [View](security/imunify/imperva/README.md) |
 | Instatus | Allowlist sync for Instatus uptime monitoring checks. | [View](security/imunify/instatus/README.md) |
 | QUIC.cloud | Allowlist sync for QUIC.cloud CDN service requests. | [View](security/imunify/quiccloud/README.md) |
 | Rank Math | Allowlist sync for Rank Math API and SEO service requests. | [View](security/imunify/rankmath/README.md) |
+| Sucuri | Allowlist sync for Sucuri WAF, CDN, proxy, malware scanning, and security services. | [View](security/imunify/sucuri/README.md) |
 | UptimeRobot | Allowlist sync for UptimeRobot uptime monitoring checks. | [View](security/imunify/uptimerobot/README.md) |
 | Wordfence | Allowlist sync for Wordfence security scans, remote checks, and diagnostics. | [View](security/imunify/wordfence/README.md) |
+| WP Compress | Allowlist sync for WP Compress image optimisation, CDN, and media delivery requests. | [View](security/imunify/wp-compress/README.md) |
 | WP Rocket | Allowlist sync for WP Rocket cache, preload, optimisation, and service requests. | [View](security/imunify/wp-rocket/README.md) |
+| WP Umbrella | Allowlist sync for WP Umbrella monitoring, management, backup and security. | [View](security/imunify/wp-umbrella/README.md) |
 
 ### Mail
 
