@@ -20,27 +20,30 @@ The integration is used to keep approved payment provider IP ranges available to
 
 Included payment integrations:
 
+- Adyen Webhooks
+- Airwallex
+- ANZ Worldline
+- Authorize.Net
+- Bluesnap
+- Braintree
+- Checkout.com API Live
+- Checkout.com API Sandbox
+- Checkout.com Webhooks Live
+- Checkout.com Webhooks Sandbox
+- Global Payments
+- GoCardless Webhooks
+- Klarna
+- Mollie
+- PayPal
+- PAYONE
+- Paystack
+- Skrill
 - Stripe API
 - Stripe Armada Gator
 - Stripe Webhooks
-- PayPal
-- Westpac QuickStream
-- ANZ Worldline
 - Square Webhooks
-- Checkout.com API Live
-- Checkout.com Webhooks Live
-- Checkout.com API Sandbox
-- Checkout.com Webhooks Sandbox
-- Adyen Webhooks
-- GoCardless Webhooks
-- Authorize.Net
-- Global Payments
-- Klarna
-- Mollie
-- PAYONE
-- Paystack
+- Westpac QuickStream
 - Worldpay
-- Airwallex
 
 ## Requirements
 
