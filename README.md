@@ -43,6 +43,9 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 | Instatus | Allowlist sync for Instatus uptime monitoring checks. | [View](security/imunify/instatus/README.md) |
 | QUIC.cloud | Allowlist sync for QUIC.cloud CDN service requests. | [View](security/imunify/quiccloud/README.md) |
 | Rank Math | Allowlist sync for Rank Math API and SEO service requests. | [View](security/imunify/rankmath/README.md) |
+| Sendcloud | Allowlist sync for Sendcloud, webhook, API, and integration requests. | [View](security/imunify/sendcloud/README.md) |
+| Site24x7 | Allowlist sync for Site24x7 uptime, availability, and experience monitoring. | [View](security/imunify/site24x7/README.md) |
+| Spam Experts | Allowlist sync for Spam Experts SMTP delivery, connector, and LDAP sync. | [View](security/imunify/spamexperts/README.md) |
 | StatusCake | Allowlist sync for StatusCake uptime monitoring checks. | [View](security/imunify/statuscake/README.md) |
 | Sucuri | Allowlist sync for Sucuri WAF, CDN, proxy, malware and security services. | [View](security/imunify/sucuri/README.md) |
 | StatusCake | Allowlist sync for StatusCake uptime monitoring checks. | [View](security/imunify/statuscake/README.md) |
