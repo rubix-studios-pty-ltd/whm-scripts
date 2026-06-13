@@ -9,7 +9,7 @@ A collection of scripts and integrations for extending, automating and managing 
 WHM iContact provider integrations that allow WHM and cPanel server notifications to be sent through supported external services.
 
 | Integration | Description | Installation |
-|---|---|---|
+|:---|:---|:---|
 | Ntfy | Send WHM and cPanel server notifications through ntfy. | [View](contact-provider/ntfy/README.md) |
 
 ### Security
@@ -17,7 +17,7 @@ WHM iContact provider integrations that allow WHM and cPanel server notification
 Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawlers, payment services, marketing platforms, and other approved service traffic.
 
 | Integration | Description | Installation |
-|---|---|---|
+|:---|:---|:---|
 | 360 Monitoring | Allowlist sync for 360 Monitoring server monitoring checks. | [View](security/imunify/360monitoring/README.md) |
 | Akamai | Allowlist sync for Akamai CDN service requests. | [View](security/imunify/akamai/README.md) |
 | Amazon S3 | Allowlist sync for Amazon S3 storage, media, backup, and integration. | [View](security/imunify/amazon-s3/README.md) |
@@ -55,7 +55,7 @@ Imunify360 allowlist sync scripts for monitoring platforms, CDN providers, crawl
 Mail automation scripts for WHM and cPanel servers, covering gateway integration, relay routing and mail infrastructure management.
 
 | Integration | Description | Installation |
-|---|---|---|
+|:---|:---|:---|
 | PMG | Sync cPanel domains with Proxmox Mail Gateway relay domains and transport. | [View](mail/proxmox/README.md) |
 
 ## License
