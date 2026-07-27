@@ -142,7 +142,8 @@ DOMAINS_CPANEL_ALL=$(whmapi1 get_domain_info --output=json \
     | sort -u)
 
 if [ -z "$DOMAINS_CPANEL_ALL" ]; then
-    log "No domains found in cPanel."
+    log "ERROR: No domains returned from cPanel. Aborting to prevent accidental removal."
+    exit 1
 fi
 
 DOMAINS_TO_SYNC="$DOMAINS_CPANEL_ALL"
