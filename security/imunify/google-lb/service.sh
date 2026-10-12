@@ -95,11 +95,15 @@ run_source "google-lb-healthchecks" fetch_static_prefixes \
   "google-lb-healthchecks" \
   "35.191.0.0/16" \
   "130.211.0.0/22" \
+  "136.124.104.0/22" \
+  "136.124.108.0/22" \
+  "209.85.152.0/22" \
+  "209.85.204.0/22" \
   "2600:2d00:1:1::/64" \
   "2600:2d00:1:b029::/64" \
   "2600:1901:8001::/48" \
-  "209.85.152.0/22" \
-  "209.85.204.0/22"
+  "2600:1904:7::/48" \
+  "2600:1904:8::/48"
 
 run_source "google-gfe-eoips" fetch_google_gfe_eoips \
   "google-gfe-eoips"
