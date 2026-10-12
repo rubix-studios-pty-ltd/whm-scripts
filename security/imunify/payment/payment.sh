@@ -303,6 +303,10 @@ run_source "gocardless-webhooks" fetch_static_prefixes \
 
 run_source "klarna" fetch_static_prefixes \
   "klarna" \
+  "13.248.252.240" \
+  "76.223.28.105" \
+  "3.33.145.71" \
+  "13.248.213.183" \
   "52.17.117.56" \
   "52.17.176.198" \
   "52.0.45.33" \
@@ -316,13 +320,7 @@ run_source "klarna" fetch_static_prefixes \
   "34.235.91.238" \
   "3.24.91.202" \
   "52.62.115.68" \
-  "52.63.129.92" \
-  "63.33.163.93" \
-  "63.34.140.6" \
-  "63.34.72.238" \
-  "52.18.109.75" \
-  "63.32.138.153" \
-  "63.32.201.200"
+  "52.63.129.92"
 
 run_source "mollie" fetch_plain_list \
   "mollie" \
