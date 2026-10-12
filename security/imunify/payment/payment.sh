@@ -362,9 +362,16 @@ run_source "przelewy24" fetch_static_prefixes \
 
 run_source "skrill" fetch_static_prefixes \
   "skrill" \
+  "91.208.28.0/24" \
   "93.191.174.0/24" \
   "193.105.47.0/24" \
-  "195.69.173.0/24"
+  "195.69.173.0/24" \
+  "18.156.81.39" \
+  "3.64.161.98" \
+  "18.195.181.168" \
+  "52.16.193.112" \
+  "54.228.179.122" \
+  "34.249.111.249"
 
 run_source "stripe-api" fetch_json_array \
   "stripe-api" \
