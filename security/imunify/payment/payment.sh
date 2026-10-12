@@ -367,7 +367,6 @@ run_source "przelewy24" fetch_static_prefixes \
 
 run_source "skrill" fetch_static_prefixes \
   "skrill" \
-  "91.208.28.0/2" \
   "93.191.174.0/24" \
   "193.105.47.0/24" \
   "195.69.173.0/24"
